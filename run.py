@@ -1,13 +1,13 @@
+nickname = ""
+nickname = input("Please enter your nickname: ")
+print("Hello "+str(nickname)+", below is the first question, good luck!")
+
 # -------------------------
 def start_quiz():
 
     selections = []
     correct_selections = 0
     question_num = 1
-    nickname = ""
-
-    nickname = input("Please enter your nickname: ")
-    print("Hello "+str(nickname)+", below is the first question, good luck!")
 
     for key in questions:
         print("-------------------------")
@@ -22,17 +22,11 @@ def start_quiz():
         question_num += 1
 
     show_score(correct_selections, selections)
-
     
 # -------------------------
 def check_result(result, selection):
-    choices = ['A', 'B', 'C', 'D']
 
-    if selection not in choices:
-        print("Selection is not valid")
-        return 0
-
-    elif selection == result:
+    if selection == result:
         print("YOU ARE CORRECT!")
         return 1
         
@@ -57,7 +51,7 @@ def show_score(correct_selections, selections):
     print()
 
     score = int((correct_selections/len(questions))*100)
-    print("You achieved: "+str(score)+"%")
+    print(str(nickname)+", you achieved: "+str(score)+"%")
 
     # -------------------------
 def restart_game():
