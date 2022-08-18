@@ -6,10 +6,11 @@ def start_quizz():
     question_num = 1
     nickname = ""
 
+    nickname = input("Please enter your nickname: ")
+    print("Hello "+str(nickname)+", below is the first question, good luck!")
+
     for key in questions:
         print("-------------------------")
-        nickname = input("Please enter your nickname: ")
-        print("Hello "+str(nickname)+", below is the first question, good luck!")
         print(key)
         for i in options[question_num-1]:
             print(i)
@@ -25,10 +26,16 @@ def start_quizz():
     
 # -------------------------
 def check_result(result, selection):
+    choices = ['A', 'B', 'C', 'D']
 
-    if result == selection:
+    if selection not in choices:
+        print("Selection is not valid")
+        return 0
+
+    elif selection == result:
         print("YOU ARE CORRECT!")
         return 1
+        
     else:
         print("YOU ARE WRONG!")
         return 0
