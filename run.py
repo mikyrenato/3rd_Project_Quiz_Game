@@ -59,3 +59,27 @@ def restart_game():
         return True
     else:
         return False 
+
+# -------------------------
+
+
+questions = {
+ "1: ": "A",
+ "2: ": "B",
+ "3: ": "C",
+ "4: ": "A"
+}
+
+options = [["A. 1", "B. 2", "C. 3", "D. 4"],
+          ["A. 1", "B. 2", "C. 3", "D. 4"],
+          ["A. 1", "B. 2", "C. 3", "D. 4"],
+          ["A. 1", "B. 2", "C. 3", "D. 4"]]
+
+start_quizz()
+
+while restart_game():
+    start_quizz()
+
+print("Good luck!")
+
+# -------------------------
