@@ -1,5 +1,5 @@
 # -------------------------
-def start_quizz():
+def start_quiz():
 
     selections = []
     correct_selections = 0
@@ -85,10 +85,10 @@ options = [["A. 1", "B. 2", "C. 3", "D. 4"],
           ["A. 1", "B. 2", "C. 3", "D. 4"],
           ["A. 1", "B. 2", "C. 3", "D. 4"]]
 
-start_quizz()
+start_quiz()
 
 while restart_game():
-    start_quizz()
+    start_quiz()
 
 print("Good luck!")
 
