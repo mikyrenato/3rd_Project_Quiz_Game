@@ -29,3 +29,22 @@ def check_result(result, selection):
     else:
         print("YOU ARE WRONG!")
         return 0
+
+# -------------------------
+def show_score(correct_selections, selections):
+    print("-------------------------")
+    print("RESULTS")
+    print("-------------------------")
+
+    print("results: ", end="")
+    for i in questions:
+        print(questions.get(i), end=" ")
+    print()
+
+    print("selections: ", end="")
+    for i in selections:
+        print(i, end=" ")
+    print()
+
+    score = int((correct_selections/len(questions))*100)
+    print("Your score is: "+str(score)+"%")
