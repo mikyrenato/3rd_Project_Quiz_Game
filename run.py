@@ -4,9 +4,12 @@ def start_quizz():
     selections = []
     correct_selections = 0
     question_num = 1
+    nickname = ""
 
     for key in questions:
         print("-------------------------")
+        nickname = input("Please enter your nickname: ")
+        print("Hello "+str(nickname)+", below is the first question, good luck!")
         print(key)
         for i in options[question_num-1]:
             print(i)
