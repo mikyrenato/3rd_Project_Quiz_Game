@@ -48,3 +48,14 @@ def show_score(correct_selections, selections):
 
     score = int((correct_selections/len(questions))*100)
     print("Your score is: "+str(score)+"%")
+
+    # -------------------------
+def restart_game():
+
+    response = input("Would you like to play again? (yes or no): ")
+    response = response.upper()
+
+    if response == "YES":
+        return True
+    else:
+        return False 
