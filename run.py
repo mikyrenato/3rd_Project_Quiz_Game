@@ -92,16 +92,28 @@ def reveal_answers():
 
 
 questions = {
- "1: ": "A",
- "2: ": "B",
- "3: ": "C",
- "4: ": "A"
+ "1: Which player scored the fastest hat-trick in the Premier League?": "A",
+ "2: Which player, with 653 games, has made the most Premier League appearances?": "B",
+ "3: Three players share the record for most Premier League red cards (8). Who are they?": "C",
+ "4: With 260 goals, who is the Premier League's all-time top scorer?": "D",
+ "5: When was the inaugural Premier League season?": "A",
+ "6: Which team won the first Premier League title?": "B",
+ "7: With 202 clean sheets, which goalkeeper has the best record in the Premier League?": "C",
+ "8: How many clubs competed in the inaugural Premier League season?": "D",
+ "9: Which three players shared the Premier League Golden Boot in 2018-19?": "A",
+ "10: The fastest goal scored in Premier League history came in 7.69 seconds. Who scored it?": "B"
 }
 
-options = [["A. 1", "B. 2", "C. 3", "D. 4"],
-          ["A. 1", "B. 2", "C. 3", "D. 4"],
-          ["A. 1", "B. 2", "C. 3", "D. 4"],
-          ["A. 1", "B. 2", "C. 3", "D. 4"]]
+options = [["A. Sadio Mane", "B. Cristiano Ronaldo", "C. Michael Owen", "D. Didier Drogba"],
+          ["A. Wayne Rooney", "B. Gareth Barry", "C. Rio Ferdinand", "D. John Terry"],
+          ["A. Nemanja Vidic, John Terry and Patrice Evra", "B. Patrick Vieira, Virgil Van Dijk and Duncan Ferguson", "C. Patrick Vieira, Richard Dunne and Duncan Ferguson", "D. Nemanja Vidic, John Terry and Richard Dunne"],
+          ["A. 1", "B. 2", "C. 3", "D. Alan Shearer"],
+          ["A. 1992-93", "B. 2", "C. 3", "D. 4"],
+          ["A. 1", "B. Manchester United", "C. 3", "D. 4"],
+          ["A. 1", "B. 2", "C. Petr Cech", "D. 4"],
+          ["A. 1", "B. 2", "C. 3", "D. 22"],
+          ["A. Pierre-Emerick Aubameyang, Mohamed Salah and Sadio Mane", "B. 2", "C. ", "D. 4"],
+          ["A. 1", "B. Shane Long (for Southampton vs Watford in 2018-19)", "C. 3", "D. "]]
 
 start_quiz()
 
