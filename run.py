@@ -112,7 +112,7 @@ options = [["A. Sadio Mane", "B. Cristiano Ronaldo", "C. Michael Owen", "D. Didi
           ["A. Chelsea", "B. Manchester United", "C. Arsenal", "D. Liverpool"],
           ["A. Edwin Van der Sar", "B. David De Gea", "C. Petr Cech", "D. Peter Schmeichel"],
           ["A. 26", "B. 24", "C. 20", "D. 22"],
-          ["A. Pierre-Emerick Aubameyang, Mohamed Salah and Sadio Mane", "B. Harry Kane, Mohamed Salah and Sadio Mane", "Pierre-Emerick Aubameyang, Hiung Ming Son and Sadio Mane. ", "D. Pierre-Emerick Aubameyang, Mohamed Salah and Jamie Vardy"],
+          ["A. Pierre-Emerick Aubameyang, Mohamed Salah and Sadio Mane", "B. Harry Kane, Mohamed Salah and Sadio Mane", "C. Pierre-Emerick Aubameyang, Hiung Ming Son and Sadio Mane. ", "D. Pierre-Emerick Aubameyang, Mohamed Salah and Jamie Vardy"],
           ["A. Cristiano Ronaldo", "B. Shane Long", "C. Carlos Tevez", "D. Zlatan Ibrahimovic"]]
 
 start_quiz()
