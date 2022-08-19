@@ -1,11 +1,13 @@
 import gspread
 from google.oauth2.service_account import Credentials
 
+
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive.file",
     "https://www.googleapis.com/auth/drive"
     ]
+
 
 CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
@@ -17,7 +19,10 @@ nickname = ""
 nickname = input("Please enter your nickname: \n")
 print("Hello "+str(nickname)+", below is the first question, good luck!")
 
+
 # -------------------------
+
+
 def start_quiz():
 
     selections = []
@@ -45,20 +50,25 @@ def start_quiz():
     resp = input("Would you like to reveal the answers together with your result % ? (yes or no): \n")
     resp = resp.upper()
 
-    global score
-
     if resp == "YES":
         score = int((correct_selections/len(questions))*100)
         print(str(nickname)+", you achieved: "+str(score)+"%")
         show_score(correct_selections, selections)
-        leaderboard()
+        data = nickname, score
+        quiz_data = [num for num in data]
+        update_worksheet(quiz_data, "Sheet1")
     else:
         score = int((correct_selections/len(questions))*100)
         print(str(nickname)+", you achieved: "+str(score)+"%")
-        leaderboard()
+        data = nickname, score
+        quiz_data = [num for num in data]
+        update_worksheet(quiz_data, "Leaderboard")
         return False
 
+
 # -------------------------
+
+
 def check_result(result, selection):
 
     if selection == result:
@@ -69,7 +79,10 @@ def check_result(result, selection):
         print("YOU ARE WRONG!")
         return 0
 
+
 # -------------------------
+
+
 def show_score(correct_selections, selections):
     print("-------------------------")
     print("RESULTS")
@@ -85,7 +98,10 @@ def show_score(correct_selections, selections):
         print(i, end=" ")
     print()
 
-    # -------------------------
+
+# -------------------------
+
+
 def restart_game():
 
     response = input("Would you like to try again? (yes or no): \n")
@@ -96,15 +112,9 @@ def restart_game():
     else:
         return False 
 
+
 # -------------------------
 
-
-def get_quiz_data():
-
-    data_str = nickname.split(), score
-    quiz_data = data_str
-
-    return quiz_data
 
 def update_worksheet(data, worksheet):
 
@@ -114,13 +124,8 @@ def update_worksheet(data, worksheet):
     print(f"{worksheet} worksheet updated successfully\n")
 
 
-def leaderboard():
-
-    data = get_quiz_data()
-    quiz_data = [num for num in data]
-    update_worksheet(quiz_data, "Sheet1")
-
 # -------------------------
+
 
 questions = {
  "1: Which player scored the fastest hat-trick in the Premier League?": "A",
@@ -135,6 +140,7 @@ questions = {
  "10: The fastest goal scored in Premier League history came in 7.69 seconds. Who scored it?": "B"
 }
 
+
 options = [["A. Sadio Mane", "B. Cristiano Ronaldo", "C. Michael Owen", "D. Didier Drogba"],
           ["A. Wayne Rooney", "B. Gareth Barry", "C. Rio Ferdinand", "D. John Terry"],
           ["A. Nemanja Vidic, John Terry and Patrice Evra", "B. Patrick Vieira, Virgil Van Dijk and Duncan Ferguson", "C. Patrick Vieira, Richard Dunne and Duncan Ferguson", "D. Nemanja Vidic, John Terry and Richard Dunne"],
@@ -146,11 +152,15 @@ options = [["A. Sadio Mane", "B. Cristiano Ronaldo", "C. Michael Owen", "D. Didi
           ["A. Pierre-Emerick Aubameyang, Mohamed Salah and Sadio Mane", "B. Harry Kane, Mohamed Salah and Sadio Mane", "C. Pierre-Emerick Aubameyang, Hiung Ming Son and Sadio Mane. ", "D. Pierre-Emerick Aubameyang, Mohamed Salah and Jamie Vardy"],
           ["A. Cristiano Ronaldo", "B. Shane Long", "C. Carlos Tevez", "D. Zlatan Ibrahimovic"]]
 
+
 start_quiz()
+
 
 while restart_game():
     start_quiz()
 
+
 print("Thank you and have a nice day! :)")
+
 
 # -------------------------
