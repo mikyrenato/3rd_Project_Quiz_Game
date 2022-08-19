@@ -14,34 +14,11 @@ SHEET = GSPREAD_CLIENT.open('quiz_game')
 
 def get_quiz_data():
 
-    while True:
-        print("Please enter quiz data.")
+    data_str = input("Enter your data here:\n")
 
-        data_str = input("Enter your data here:\n")
-
-        quiz_data = data_str.split(",")
-
-        if validate_data(quiz_data):
-            print("Data is valid!")
-            break
+    quiz_data = data_str.split(",")
 
     return quiz_data
-
-
-def validate_data(values):
-
-    try:
-        [int(value) for value in values]
-        if len(values) != 2:
-            raise ValueError(
-                f"Exactly 6 values required, you provided {len(values)}"
-            )
-    except ValueError as e:
-        print(f"Invalid data: {e}, please try again.\n")
-        return False
-
-    return True
-
 
 def update_worksheet(data, worksheet):
 
