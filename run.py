@@ -14,8 +14,14 @@ def start_quiz():
         print(key)
         for i in options[question_num-1]:
             print(i)
-        selection = input("Enter (A, B, C, or D): ")
-        selection = selection.upper()
+        while True:
+            selection = input("Enter (A, B, C, or D): ")
+            selection = selection.upper()
+            if selection not in ('A', 'B', 'C', 'D'):
+                print("Invalid choice, try again:")
+            else:
+                break
+
         selections.append(selection)
 
         correct_selections += check_result(questions.get(key), selection)
