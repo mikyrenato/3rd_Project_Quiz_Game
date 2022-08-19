@@ -107,13 +107,13 @@ questions = {
 options = [["A. Sadio Mane", "B. Cristiano Ronaldo", "C. Michael Owen", "D. Didier Drogba"],
           ["A. Wayne Rooney", "B. Gareth Barry", "C. Rio Ferdinand", "D. John Terry"],
           ["A. Nemanja Vidic, John Terry and Patrice Evra", "B. Patrick Vieira, Virgil Van Dijk and Duncan Ferguson", "C. Patrick Vieira, Richard Dunne and Duncan Ferguson", "D. Nemanja Vidic, John Terry and Richard Dunne"],
-          ["A. 1", "B. 2", "C. 3", "D. Alan Shearer"],
-          ["A. 1992-93", "B. 2", "C. 3", "D. 4"],
-          ["A. 1", "B. Manchester United", "C. 3", "D. 4"],
-          ["A. 1", "B. 2", "C. Petr Cech", "D. 4"],
-          ["A. 1", "B. 2", "C. 3", "D. 22"],
-          ["A. Pierre-Emerick Aubameyang, Mohamed Salah and Sadio Mane", "B. 2", "C. ", "D. 4"],
-          ["A. 1", "B. Shane Long (for Southampton vs Watford in 2018-19)", "C. 3", "D. "]]
+          ["A. Cristiano Ronaldo", "B. Carlos Tevez", "C. Thierry Henry", "D. Alan Shearer"],
+          ["A. 1992-93", "B. 1991-1992", "C. 1989-90", "D. 1993-94"],
+          ["A. Chelsea", "B. Manchester United", "C. Arsenal", "D. Liverpool"],
+          ["A. Edwin Van der Sar", "B. David De Gea", "C. Petr Cech", "D. Peter Schmeichel"],
+          ["A. 26", "B. 24", "C. 20", "D. 22"],
+          ["A. Pierre-Emerick Aubameyang, Mohamed Salah and Sadio Mane", "B. Harry Kane, Mohamed Salah and Sadio Mane", "Pierre-Emerick Aubameyang, Hiung Ming Son and Sadio Mane. ", "D. Pierre-Emerick Aubameyang, Mohamed Salah and Jamie Vardy"],
+          ["A. Cristiano Ronaldo", "B. Shane Long", "C. Carlos Tevez", "D. Zlatan Ibrahimovic"]]
 
 start_quiz()
 
