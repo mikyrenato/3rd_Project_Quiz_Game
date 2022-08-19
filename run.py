@@ -15,6 +15,7 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('quiz_game')
 
 
+print("Do you know much about football? Can you make it on the leaderboard?")
 nickname = ""
 nickname = input("Please enter your nickname: \n")
 print("Hello "+str(nickname)+", below is the first question, good luck!")
@@ -57,12 +58,14 @@ def start_quiz():
         data = nickname, score
         quiz_data = [num for num in data]
         update_worksheet(quiz_data, "Sheet1")
+        leaderboard()
     else:
         score = int((correct_selections/len(questions))*100)
         print(str(nickname)+", you achieved: "+str(score)+"%")
         data = nickname, score
         quiz_data = [num for num in data]
         update_worksheet(quiz_data, "Leaderboard")
+        leaderboard()
         return False
 
 
@@ -122,6 +125,18 @@ def update_worksheet(data, worksheet):
     worksheet_to_update = SHEET.worksheet(worksheet)
     worksheet_to_update.append_row(data)
     print(f"{worksheet} worksheet updated successfully\n")
+
+
+# -------------------------
+
+
+def leaderboard():
+
+    lead = SHEET.worksheet('Leaderboard')
+
+    data = lead.get_all_values()
+
+    print(data)
 
 
 # -------------------------
