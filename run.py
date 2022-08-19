@@ -132,11 +132,13 @@ def update_worksheet(data, worksheet):
 
 def leaderboard():
 
+    from tabulate import tabulate
+
     lead = SHEET.worksheet('Leaderboard')
 
     data = lead.get_all_values()
-
-    print(data)
+    
+    print(tabulate(data, headers=['Nickname', 'Score']))
 
 
 # -------------------------
