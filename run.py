@@ -27,7 +27,13 @@ def start_quiz():
         correct_selections += check_result(questions.get(key), selection)
         question_num += 1
 
-    show_score(correct_selections, selections)
+    resp = input("Would you like to reveal the answers? (yes or no): ")
+    resp = resp.upper()
+
+    if resp == "YES":
+        show_score(correct_selections, selections)
+    else:
+        return False 
     
 # -------------------------
 def check_result(result, selection):
@@ -66,6 +72,18 @@ def restart_game():
     response = response.upper()
 
     if response == "YES":
+        return True
+    else:
+        return False 
+
+# -------------------------
+
+def reveal_answers():
+
+    resp = input("Would you like to reveal the answers? (yes or no): ")
+    resp = resp.upper()
+
+    if resp == "YES":
         return True
     else:
         return False 
