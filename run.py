@@ -31,8 +31,12 @@ def start_quiz():
     resp = resp.upper()
 
     if resp == "YES":
+        score = int((correct_selections/len(questions))*100)
+        print(str(nickname)+", you achieved: "+str(score)+"%")
         show_score(correct_selections, selections)
     else:
+        score = int((correct_selections/len(questions))*100)
+        print(str(nickname)+", you achieved: "+str(score)+"%")
         return False 
     
 # -------------------------
@@ -61,9 +65,6 @@ def show_score(correct_selections, selections):
     for i in selections:
         print(i, end=" ")
     print()
-
-    score = int((correct_selections/len(questions))*100)
-    print(str(nickname)+", you achieved: "+str(score)+"%")
 
     # -------------------------
 def restart_game():
@@ -120,6 +121,6 @@ start_quiz()
 while restart_game():
     start_quiz()
 
-print("Good luck!")
+print("Thank you and have a nice day! :)")
 
 # -------------------------
