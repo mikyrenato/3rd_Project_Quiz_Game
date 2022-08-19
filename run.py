@@ -1,5 +1,5 @@
 nickname = ""
-nickname = input("Please enter your nickname: ")
+nickname = input("Please enter your nickname: \n")
 print("Hello "+str(nickname)+", below is the first question, good luck!")
 
 # -------------------------
@@ -15,7 +15,7 @@ def start_quiz():
         for i in options[question_num-1]:
             print(i)
         while True:
-            selection = input("Enter (A, B, C, or D): ")
+            selection = input("Enter (A, B, C, or D): \n")
             selection = selection.upper()
             if selection not in ('A', 'B', 'C', 'D'):
                 print("Invalid choice, try again:")
@@ -27,7 +27,7 @@ def start_quiz():
         correct_selections += check_result(questions.get(key), selection)
         question_num += 1
 
-    resp = input("Would you like to reveal the answers? (yes or no): ")
+    resp = input("Would you like to reveal the answers? (yes or no): \n")
     resp = resp.upper()
 
     if resp == "YES":
@@ -68,7 +68,7 @@ def show_score(correct_selections, selections):
     # -------------------------
 def restart_game():
 
-    response = input("Would you like to try again? (yes or no): ")
+    response = input("Would you like to try again? (yes or no): \n")
     response = response.upper()
 
     if response == "YES":
@@ -80,7 +80,7 @@ def restart_game():
 
 def reveal_answers():
 
-    resp = input("Would you like to reveal the answers? (yes or no): ")
+    resp = input("Would you like to reveal the answers? (yes or no): \n")
     resp = resp.upper()
 
     if resp == "YES":
