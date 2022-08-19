@@ -31,7 +31,7 @@ def update_worksheet(data, worksheet):
 def main():
 
     data = get_quiz_data()
-    quiz_data = [int(num) for num in data]
+    quiz_data = [num for num in data]
     update_worksheet(quiz_data, "Sheet1")
 
 
