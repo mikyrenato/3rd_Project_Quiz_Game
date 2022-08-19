@@ -28,12 +28,8 @@ def update_worksheet(data, worksheet):
     print(f"{worksheet} worksheet updated successfully\n")
 
 
-def main():
+def leaderboard():
 
     data = get_quiz_data()
     quiz_data = [num for num in data]
     update_worksheet(quiz_data, "Sheet1")
-
-
-print("Welcome to the football quiz")
-main()
