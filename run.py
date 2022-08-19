@@ -81,7 +81,7 @@ def restart_game():
 
 def reveal_answers():
 
-    resp = input("Would you like to reveal the answers? (yes or no): \n")
+    resp = input("Would you like to reveal the answers together with your result % ? (yes or no): \n")
     resp = resp.upper()
 
     if resp == "YES":
