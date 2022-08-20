@@ -1,5 +1,4 @@
 import gspread
-import pandas as pd
 from tabulate import tabulate
 from google.oauth2.service_account import Credentials
 
@@ -142,7 +141,7 @@ def leaderboard():
 
     data.sort(key=size, reverse=True)
 
-    print(tabulate(data[0:11], headers=['Nickname', 'Score']))
+    print(tabulate(data[0:11], headers=['Leaderboard', 'Table']))
 
 
 # -------------------------
