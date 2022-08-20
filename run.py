@@ -40,7 +40,7 @@ def start_quiz():
             selection = input("Enter (A, B, C, or D): \n")
             selection = selection.upper()
             if selection not in ('A', 'B', 'C', 'D'):
-                print("Invalid choice, please enter A, B, C, or D:")
+                print("Invalid choice, the only options are: A, B, C, or D")
             else:
                 break
 
