@@ -40,7 +40,7 @@ def start_quiz():
             selection = input("Enter (A, B, C, or D): \n")
             selection = selection.upper()
             if selection not in ('A', 'B', 'C', 'D'):
-                print("Invalid choice, try again:")
+                print("Invalid choice, please enter A, B, C, or D:")
             else:
                 break
 
@@ -92,7 +92,7 @@ def show_score(correct_selections, selections):
     print("RESULTS")
     print("-------------------------")
 
-    print("results: ", end="")
+    print("results:    ", end="")
     for i in questions:
         print(questions.get(i), end=" ")
     print()
