@@ -14,6 +14,7 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('quiz_game')
 
+
 def leaderboard():
 
     lead = SHEET.worksheet('Leaderboard')
@@ -24,7 +25,7 @@ def leaderboard():
 
     data.sort(key=size, reverse=True)
 
-    print(tabulate(data, headers=['Leaderboard', 'Table']))
+    print(tabulate(data[0:11], headers=['Leaderboard', 'Table']))
 
 
 leaderboard()

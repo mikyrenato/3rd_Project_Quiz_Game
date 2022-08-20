@@ -59,7 +59,7 @@ def start_quiz():
         show_score(correct_selections, selections)
         data = nickname, score
         quiz_data = [num for num in data]
-        update_worksheet(quiz_data, "Sheet1")
+        update_worksheet(quiz_data, "Leaderboard")
         leaderboard()
     else:
         score = int((correct_selections/len(questions))*100)
@@ -134,7 +134,6 @@ def update_worksheet(data, worksheet):
 
 def leaderboard():
 
-
     lead = SHEET.worksheet('Leaderboard')
 
     data = lead.get_all_values()
@@ -143,7 +142,7 @@ def leaderboard():
 
     data.sort(key=size, reverse=True)
 
-    print(tabulate(data, headers=['Leaderboard', 'Table']))
+    print(tabulate(data[0:11], headers=['Nickname', 'Score']))
 
 
 # -------------------------
