@@ -1,4 +1,6 @@
 import gspread
+import pandas as pd
+from tabulate import tabulate
 from google.oauth2.service_account import Credentials
 
 SCOPE = [
@@ -14,13 +16,16 @@ SHEET = GSPREAD_CLIENT.open('quiz_game')
 
 def leaderboard():
 
-    from tabulate import tabulate
-
     lead = SHEET.worksheet('Leaderboard')
 
     data = lead.get_all_values()
-    
-    print(tabulate(data, headers=['Name', 'Score']))
+
+    size = lambda dat: dat[1]
+
+    data.sort(key=size, reverse=True)
+
+    print(tabulate(data, headers=['Leaderboard', 'Table']))
 
 
 leaderboard()
+
