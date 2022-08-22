@@ -1,3 +1,7 @@
+#pip3 install gspread google-auth
+#pip3 freeze > requirements.txt
+#pip3 install tabulate
+
 import gspread
 from google.oauth2.service_account import Credentials
 from tabulate import tabulate
@@ -137,7 +141,7 @@ def leaderboard():
 
     data = lead.get_all_values()
 
-    size = lambda dat: dat[1]
+    size = lambda dat: float(dat[1])
 
     data.sort(key=size, reverse=True)
 
