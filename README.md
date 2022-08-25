@@ -80,7 +80,7 @@ The site encompasses the html index page and the terminal screen. I wanted to ha
 
 ## UX Experience
 
-- The player can choose his ame or nickname.
+- The player can choose his name or nickname.
 - The player can see the first question and options.
 - The player can see if his chocie was good or wrong.
 - Validation allows the Player multiple attempts of getting inputs right.
