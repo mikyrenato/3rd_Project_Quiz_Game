@@ -2,7 +2,7 @@
 # Football Quiz: 3rd Project
 
 <p align ="center">      
-     <img src="assets/images/readme/images/interface.jpg"  alt="intro to game" />    
+     <img src="assets/images/"/>    
 </p>
 <br/>  
 
@@ -10,67 +10,24 @@
 ## Introduction <a name="introduction"></a>  
 
 
-Where Evil Dwells is a Text Based Adventure for a Command Line Interface. It is utilizing the python language.
-The Game is a murder mystery based in a Creepy House. The Player acts as the protagonist and will drive the direction of the game. The decision making will allow the player to interact with the characters and they can experience different scenarios according to their choices. This is an original story based on the vintage horror/thriller genre with inspiration from the classic movie, 'Murder by Death'. The goal of the game is to make it to the end of the game alive and be able to claim the inheritance. The hope is that the game will offer the player an interactive and fun experience, that they can repeat and experience differently each time they play. 
+My third project is a football quiz. A large part of the inspiration for this project comes from my love for football and I be;ieve all football fans will enjoy it as much as I do, by testing their knowledge about the football world.
 
 <br/>
 
-[Visit the Where Evil Dwells Site](https://where-evil-dwells.herokuapp.com/)  
+[Visit the Football Quiz](https://football-quiz-game.herokuapp.com/)  
 
-[Visit the Where Evil Dwells Repository](https://github.com/MHickey2/Where-Evil-Dwells)
+[Visit the Football Quiz Repository](https://github.com/mikyrenato/3rd_Project_Quiz_Game)
 
 <br/>    
 
-# Table of Contents <a name="toc"></a>
-
-1. [UX Strategy](#uxstrategy)
-    1. [Business Goals](#businessgoals)
-    2. [Target Customer](#targetcustomer)
-2. [User Stories](#userstories)
-    1. [First Time User](#firsttimeuser)
-    2. [Regular User](#regularuser)
-    3. [Site Owner](#siteowner)
-3.  [Layout](#layout)
-    1. [Theme](#Theme)
-    2. [UX experience](#UX)
-    3. [Graphics](#graphics)
-4.  [Flow Chart for Game](#flowchart)        
-5.  [Features](#features)
-    1. [Start Page](#startpage)
-    2. [Instructions](#instructions) 
-    3. [Intro To Game](#intro)
-    4. [Arrival](#arrival) 
-    5. [Guest Intro](#guestintro)
-    6. [Warning Letter](#warningletter)  
-    7. [Guest Details](#guestdetails)
-    8. [Random Element](#random)
-    9. [Different Paths](#paths)
-6.  [Future Implementation](#future)
-7.  [Tools and Technology](#technology)
-8.  [Testing](#testing)
-    1. [Manual Testing](#manual)
-    2. [User Story Testing](#userstorytesting)
-    3. [General Testing](#general)
-    4. [Validation](#validation)
-9. [Bugs and Issues](#bugs)
-    1. [Resolved](#resolved)
-    2. [Unresolved](#unresolved)
-10. [Deployment](#deployment)
-    1. [Make Local Clone](#clone)
-    2. [Forking](#fork)
-    3. [Student Template](#studenttemplate)
-    4. [Deploying to Heroku](#heroku)
-11.  [Credits](#credits)
-12.  [Acknowledgements](#acknowledgements)
-
 ----
 
-## UX Strategy <a name="uxstrategy"></a>
+## UX Strategy
 
 <br/> 
 
 ### The Business Goals of the Website: <a name="businessgoals"></a>
-- No commercial goals, but the site's goal is to to provide an interactive 'Choose your Own Adventure'.
+- No commercial goals, but the site's goal is to to provide an interactive quiz.
   
   <br/> 
 
@@ -79,282 +36,60 @@ The Game is a murder mystery based in a Creepy House. The Player acts as the pro
 - The audience of the site could encompass a number of age groups and there would generally not be any   limitation on who could not play.   
        
 - Would probably require some access to digital technology(not mobile).      
-- May be useful for a user who has spare time and enjoys using decision making to solve a mystery.      
-- Someone who likes interaction in their gaming.      
+- May be useful for a user who has spare time and enjoys football.    
 
  <br/>  
-
- #### [Return to Table of Contents](#toc)
+ 
 ----
 
 <br>
 
-## User Stories  <a name="userstories"></a>
+## User Stories
 
 <br>
 
-### As a first time user to this site, I want to …..<a name="firsttimeuser"></a>
+### As a first time user and a regular user to this site, I want to:
 - Understand how the Game Works.
 - Play the Game.
-- If I want to restart a Game, I want to be able to do this easily.
-  
-
-  <br/>
-
-### As a regular user of the site, I want to …...  <a name="regularuser"></a>  
-- I want to try the various scenarios to navigate through the game.   
-    
-- I want to avail of all the options to have different experiences.        
-- I want more complexity and a greater range of scenarios within the game.       
-   
+- See if my answer was correct
+- See the correct answer
+- See the leaderboard
 
  <br/>
 
-### As the site owner, I want to …..    <a name="siteowner"></a>
+### As the site owner, I want to:
 - Build more complexity in the game, so it is more challenging to the user.
-- Add more scenarios to give the user a wider range of experiences.
-- Offer a wider range of settings within the game.
-- In the present game, the killer is picked at random, so clues would be unhelpful, 
- but in future games, clues and red herrings could be added to create more of an 
- investigative  experience, where the killer can be identified by the player.
-- Provide the user with more decision making opportunities.
+- Add more quiz categories to give the user a wider range of experiences.
+- Offer a wider range of settings within the game(i.e. difficulty of the questions).
   
 
   <br/>  
-#### [Return to Table of Contents](#toc)  
+
 ----
-## Layout  <a name="layout"></a> 
+
+## Layout
 
 <br/>
 
 
 ## Theme    <a name="theme"></a>  
 
-The site encompasses the html index page and the terminal screen. I wanted to have a background image that resonates with the theme of the game. I simply applied a background image of a creepy house. In regards to the interface i added aasci art images to supplement the settings depicted in the text. The background colours were used to make certain elements stand out i.e. the letter. Colour was applied to prompts, to make them stand out from the rest of the text flow. Colour was also used when the player dies in the game(red) as it is synonymous with danger.
+The site encompasses the html index page and the terminal screen. I wanted to have a background image that resonates with the theme of the game.
 
 <br>
 
 ## UX Experience    <a name="ux"></a>
 
-- The player is given a backstory on what they need to do in the game.
-- The player can choose to see the instructions for the game.
-- The player is prompted when a decision needs to be made.
-- The prompts are designed to stand out from the rest of the text.
+- The player can choose his ame or nickname.
+- The player can see the first question and options.
+- The player can see if his chocie was good or wrong.
 - Validation allows the Player multiple attempts of getting inputs right.
-- Player is allowed to see more information on guests before deciding on a buddy. 
+- Player is allowed to see the coorect answers if wanted.
+- Player is allowed to see the leaderboard. 
+- Player is allowed to try again.
    
 <br>
 
-## Graphics    <a name="graphics"></a>
-
-<br>
-
- 
-[![Horror fonts](https://see.fontimg.com/api/renderfont4/eZKDm/eyJyIjoiZnMiLCJoIjo3NywidyI6MTAwMCwiZnMiOjc3LCJmZ2MiOiIjRjExMDEwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/V0hFUkUgRVZJTCBEV0VMTFM/bloody-camp-free-trial.png)](https://www.fontspace.com/category/horror)
-
-<br>
-
-### ABOUT BLOODY CAMP TRIAL FONT: 
-Bloody Camp is a horror blood font, which creates a horror tone and felt it supplemented the
-horror theme of the game. I tried to accentuate the horror mode by selecting a nice rich font
-that is a true type font, and I used it as an image one the site. The site allowed you to set
-the color and scale of the image.
-
-<br>
-
-<h3 align = "Center">
-Background Image
-</h3>
-<p align ="center">      
-     <img src="assets/images/readme/images/hauntedhouse.jpg"  alt="background to the game" />    
-</p>
-<br/> 
-
-The background image was sourced again to supplement the horror theme and the setting of the
-game is in a house, so I thought it was fitting that the user can visualize the environment that the game is depicting and soak up the atmosphere.
-
-<br>
-
-The rest of the images consist of aasci art sourced from an online generator and a free resource that contains different images by category, I choose images that set the scene for various settings within the game. I did not overdo this as I didn't want to distract the player too much from game play.
-
-<br>
-
-<h3 align = "Center">
-Aasci House Image
-</h3>
-
-<p align ="center">      
-     <img src="assets/images/readme/images/aascihouse.png"  alt="aasci art house image" />    
-</p>
-
-
-<br>
-
-<h3 align = "Center">
-Aasci Death Image
-</h3>
-
-
-<p align ="center">      
-     <img src="assets/images/readme/images/aascideath.png"  alt="aasci art death image" />    
-</p>
-<br/> 
-
- #### [Return to Table of Contents](#toc)
-----
-
-<br>
-
-## Flow Chart for the Game  <a name="flowchart"></a>
-
-<br>
-
-I created a flow chart in Draw.io, which helped me to focus on how the game should flow. The first stage of the game is the intro where the user gets information on how to play the game, there is a little exploration of the settings and the hook would be the warning, which steers the player to make decisions that will set their course for future play. There are 4 main paths that the player can chose, where the user will have a customized experience and ultimately the end result will be revealed to the user.
-  
-<br>
-
-<p align ="center">      
-     <img src="assets/images/readme/images/flowchartBig.jpg"  alt="Flow Chart" />    
-</p>
-<br/> 
-
-
- #### [Return to Table of Contents](#toc)
-----
-
-<br>
-
-## Features  <a name="features"></a>
-
-<br>
-
-### Starting Page   <a name="startpage"></a>
-
-
-The Introduction to the Game shows the Banner for the game and initially asking whether the user wants to play the game. If the user says no, they will be presented with a goodbye message, and if they confirm yes they can
-proceed to the game.   
-
-<br>
-
-<p align ="center">      
-     <img src="assets/images/readme/images/starterscreen.png"  alt="Starting Screen Image" />    
-</p>
-
-<br/> 
-
-### Instructions      <a name="instructions"></a>
-
-The player can choose to see the instructions for the game, but if they choose not to see them, prompts will help the player at evey step of the game.
-
-<br>
-
-<p align ="center">      
-     <img src="assets/images/readme/images/instructions.png"  alt="Instructions for Player" />    
-</p>
-
-<br/> 
-
-### Intro To Game Story   <a name="intro"></a>
-
-The introduction to the background story is displayed to the player, including a depiction of a House, the player is invited and the player has to decide to accept in order to proceed to gameplay.
-
-<p align ="center">      
-     <img src="assets/images/readme/images/introtogame.png"  alt="Intro Story to Game" />    
-</p>
-
-<br/> 
-
-### Arrival at House Setting      <a name="arrival"></a>
-
-The player is introduced to the house setting and this is their entry level position for meeting with the characters in the game.
-
-<br>
-
-<p align ="center">      
-     <img src="assets/images/readme/images/arrival.png"  alt="Arrival information for player" />    
-</p>
-
-<br/> 
-
-### Introduction to Guests      <a name="guestintro"></a>
-
-The player gets to meet the characters they will be playing with, just their names for now and the player is required to supply their own name, which is validated for correct input, when this is supplied a greeting is displayed to the player.
-
-<br>
-
-<p align ="center">      
-     <img src="assets/images/readme/images/guests.png"  alt="Introduction to other guests" />    
-</p>
-
-<br/> 
-
-
-### Warning Letter      <a name="warningletter"></a>
-
-The letter is the key part of the game, as it drives the action from this moment on, it spurs the player into action. It is so important that the user has two chances of seeing the contents.
-
-
-<br>
-
-<p align ="center">      
-     <img src="assets/images/readme/images/letter.png"  alt="Warning letter for the player" />    
-</p>
-
-<br/>
-
-### Guest Details       <a name="guestdetails"></a>
-
-Before choosing a buddy for the game, the player is given the opportunity to see more details on one or all of the guests before their choice. They will not see details outside of what is needed for this choice. Certain details are hidden and can be used for future development.
-<br>
-
-<p align ="center">      
-     <img src="assets/images/readme/images/guestdetails.png"  alt="Guest details for the player" />    
-</p>
-
-<br/> 
-
-### Random Element      <a name="random"></a>
-
-In regards to choosing a buddy and choosing a random safety item, an element of randomness has been introduced, in that the player can choose to be assigned a random buddy and a random safety item and take their chances in the game.
-
-<br>
-
-<p align ="center">      
-     <img src="assets/images/readme/images/random.png"  alt="Random element in game" />    
-</p>
-
-<br/> 
-
-### Different Paths in the Game    <a name="paths"></a>
-
-There are Four major paths in the game, determined by the player's choice for their buddy, after buddy selection, an introduction to the character will be displayed and a location for your particular path. Then there will be a series of events with prompts for input from the player. These inputs will decide their fate in the game. They can choose to escape the game, in which case they survive but they forfeit their inheritance. If they chose wrongly they can be killed by the killer. If they make it to the end of the game they will find out if their buddy was the killer or if they have survived the night. If they survive they will be shown a survivor message and will be able to leave the game.
-
-<br>
-
-<p align ="center">      
-     <img src="assets/images/readme/images/lusciousstory.png"  alt="Path for Luscious" />    
-</p>
-
-<br/> 
-
-<br>
-
-<p align ="center">      
-     <img src="assets/images/readme/images/survival.png"  alt="Survival/death Notification" />    
-</p>
-
-<br/>
-
-<br>
-
-<p align ="center">      
-     <img src="assets/images/readme/images/youdie.png"  alt="Dying Notification" />    
-</p>
-
-<br/> 
-
- #### [Return to Table of Contents](#toc)
-----
  ## Future Implementation  <a name="future"></a>
 
  <br>
