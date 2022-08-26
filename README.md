@@ -1,9 +1,8 @@
 
 # Football Quiz: 3rd Project
 
-<p align ="center">      
-     <img src="assets/images/"/>    
-</p>
+![](views/)
+
 <br/>  
 
  
@@ -71,7 +70,7 @@ My third project is a football quiz. A large part of the inspiration for this pr
 
 The site encompasses the html index page and the terminal screen. I wanted to have a background image that resonates with the theme of the game.
 
- <img src="views/j.jpg"/>
+ ![](views/j.jpg)
 
 <br>
 
