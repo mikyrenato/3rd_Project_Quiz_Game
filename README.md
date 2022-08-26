@@ -105,7 +105,10 @@ The site encompasses the html index page and the terminal screen. I wanted to ha
 ----
 ## Testing
 
-
+![](views/pep8.PNG)
+![](views/pep82.PNG)
+![](views/pep83.PNG)
+![](views/l.PNG)
 
  ## Deployment
 
