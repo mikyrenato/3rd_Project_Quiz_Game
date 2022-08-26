@@ -67,14 +67,11 @@ My third project is a football quiz. A large part of the inspiration for this pr
 
 ----
 
-## Layout
-
-<br/>
-
-
 ## Theme
 
 The site encompasses the html index page and the terminal screen. I wanted to have a background image that resonates with the theme of the game.
+
+ <img src="views/j.jpg"/>
 
 <br>
 
