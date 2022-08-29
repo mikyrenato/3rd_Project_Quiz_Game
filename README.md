@@ -159,6 +159,7 @@ provided
 
  This helped me understand how to [Sort data as float](https://stackoverflow.com/questions/5967500/how-to-correctly-sort-a-string-with-a-number-inside) on my leaderboard data.
  I used [this repositorie](https://github.com/MHickey2/Where-Evil-Dwells) to inspire myself when creating the readme file.
+ I used [this repositorie](https://github.com/AlexaH88/harry-potter-adventure-game/blob/main/views/index.html) to inspire myself on how to style the layout of the quiz.
 
  I also used the following online resources:
 
