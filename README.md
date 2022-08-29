@@ -104,10 +104,11 @@ The site encompasses the html index page and the terminal screen. I wanted to ha
   
 ----
 ## Testing
-
+I tested my project on PEP8 as suggested in the course and by my mentor, I was really surprised to see the amount of errors I was getting, luckily I was able to fix them all:
 ![](views/pep8.PNG)
 ![](views/pep82.PNG)
 ![](views/pep83.PNG)
+I have also tested my project using Lighthouse and the result was a good one:
 ![](views/l.PNG)
 
  ## Deployment
@@ -159,18 +160,11 @@ provided
 
 ----
  ## Credits
- How to print Coloured text in Python [Tutorial](https://www.youtube.com/watch?v=u51Zjlnui4Y)
+ This tutorial helped me put the base of my Python project [Tutorial](https://www.youtube.com/watch?v=yriw5Zh406s&list=PLFIUQuoVboS-nnEsyVYuwS0S1-tQJRwc8&index=6&t=429s)
 
- Choose Your Own Adventure Game in Python (Beginners) [Tutorial](https://www.youtube.com/watch?v=DEcFCn2ubSg)
+ This helped me to print my leaderboard as [Tabular data](https://stackoverflow.com/questions/9535954/printing-lists-as-tabular-data)
 
- Python Text Based Adventure Game Tutorial [Tutorial](https://www.youtube.com/watch?v=u8X6TiJA8as&t=186s)
- 
- Simple Python Project | Text-Based Adventure Game: Time Unraveled [Tutorial](https://www.youtube.com/watch?v=ypNFNr72Xe8&t=2173s)
-
- Let's Make a Text Adventure Game In Python  [Tutorial](https://www.youtube.com/watch?v=HzDcKq2NDwM&t=1603s)
-
-On Stack Overflow I found information in relation to writing text on screen at different speeds, and I used it for various texts imported from narration.py (see below)
-    
+ This helped me understand how to [Sort data as float](https://stackoverflow.com/questions/5967500/how-to-correctly-sort-a-string-with-a-number-inside) on my leaderboard data.
 
  I also used the following online resources:
 
