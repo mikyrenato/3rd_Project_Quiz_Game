@@ -28,7 +28,7 @@ print("Hello "+str(nickname)+", below is the first question, good luck!")
 
 # -------------------------
 
-
+#This is the main function which will run the quiz
 def start_quiz():
 
     selections = []
@@ -40,6 +40,7 @@ def start_quiz():
         print(key)
         for i in options[question_num-1]:
             print(i)
+        #This is the validation in case the user is choosing an invalid answer
         while True:
             selection = input("Enter (A, B, C, or D): \n")
             selection = selection.upper()
@@ -52,7 +53,7 @@ def start_quiz():
 
         correct_selections += check_result(questions.get(key), selection)
         question_num += 1
-
+    #the user is being asked if he want to see the correct answers
     resp = input("Would you like to reveal the answers together"
                  "with your result % ? (yes or no): \n")
     resp = resp.upper()
@@ -77,7 +78,7 @@ def start_quiz():
 
 # -------------------------
 
-
+#This function is telling the user if the answer was correct/incorrect
 def check_result(result, selection):
 
     if selection == result:
@@ -90,7 +91,7 @@ def check_result(result, selection):
 
 # -------------------------
 
-
+#This fucntion will show the correct results and the choices
 def show_score(correct_selections, selections):
     print("-------------------------")
     print("RESULTS")
@@ -109,7 +110,7 @@ def show_score(correct_selections, selections):
 
 # -------------------------
 
-
+#This fucntion is asking the user if he wants to try again or end the game
 def restart_game():
 
     response = input("Would you like to try again? (yes or no): \n")
@@ -123,7 +124,7 @@ def restart_game():
 
 # -------------------------
 
-
+#This fucntion is updating the leaderboard worksheet
 def update_worksheet(data, worksheet):
 
     print(f"Updating {worksheet} worksheet...\n")
@@ -134,7 +135,7 @@ def update_worksheet(data, worksheet):
 
 # -------------------------
 
-
+#This function is sorting from highest to lowest the top 10 results from the worksheet
 def leaderboard():
 
     lead = SHEET.worksheet('Leaderboard')
@@ -150,7 +151,7 @@ def leaderboard():
 
 # -------------------------
 
-
+#these are the quiz questions and answers
 questions = {
  "1: Which player scored the fastest hat-trick in the Premier League?": "A",
  "2: Which player, with 653 games, has made the most"
@@ -169,7 +170,7 @@ questions = {
  "history came in 7.69 seconds. Who scored it?": "B"
 }
 
-
+#These are the quiz options
 options = [["A. Sadio Mane", "B. Cristiano Ronaldo",
             "C. Michael Owen", "D. Didier Drogba"],
            ["A. Wayne Rooney", "B. Gareth Barry",
