@@ -57,9 +57,30 @@
                 height: auto;
                 margin: 0;
             }
+        
+             #background-image {
+                margin: 0;
+                z-index: -1;
+                width: 100%;
+                height: auto;
+            }
 
-            #background-image {
-                background: cover no-repeat;
+            /* code to center the button and terminal elements taken from Stack Overflow - more details in README */
+            /* button */
+            button {
+                width: 200px;
+                height: 40px;
+                background-color: #02084B;
+                border: 3px solid #F5C116;
+                color: #FFFFFF;
+                text-transform: uppercase;
+                margin: 20px;
+                border-radius: 8px;
+                z-index: +1;
+                position: absolute;
+                top: 150px;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
         
             /* terminal */
