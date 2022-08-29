@@ -11,9 +11,66 @@
     <title>Python Terminal by Code Institute</title>
     
     <style>
-        body {
-            font-family: Arial;
-        }
+     
+            /* general page styling */
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                font-family: 'Gentium Plus', sans-serif;
+                color: #FFFFFF;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: auto;
+                height: 100vh;
+                background-color: #02084B;
+            }
+
+            main {
+                clear: both;
+            }
+
+            /* header */
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                z-index: +1;
+                top: 10px;
+            }
+
+            h1 {
+                display: flex;
+                justify-content: center;
+                font-size: 70px;
+                width: 100%;
+                align-items: center;
+            }
+
+            /* background image */
+            a {
+                width: 100%;
+                height: auto;
+                margin: 0;
+            }
+
+            #background-image {
+                margin: 0;
+                z-index: -1;
+                width: 100%;
+                height: auto;
+            }
+        
 
         /**
         * Default styles for xterm.js
