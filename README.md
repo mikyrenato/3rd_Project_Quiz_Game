@@ -158,6 +158,7 @@ provided
  This helped me to print my leaderboard as [Tabular data](https://stackoverflow.com/questions/9535954/printing-lists-as-tabular-data)
 
  This helped me understand how to [Sort data as float](https://stackoverflow.com/questions/5967500/how-to-correctly-sort-a-string-with-a-number-inside) on my leaderboard data.
+ I used [this repositorie](https://github.com/MHickey2/Where-Evil-Dwells) to inspire myself when creating the readme file.
 
  I also used the following online resources:
 
