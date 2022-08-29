@@ -54,14 +54,6 @@ My third project is a football quiz. A large part of the inspiration for this pr
 - See the correct answer
 - See the leaderboard
 
- <br/>
-
-### As the site owner, I want to:
-- Build more complexity in the game, so it is more challenging to the user.
-- Add more quiz categories to give the user a wider range of experiences.
-- Offer a wider range of settings within the game(i.e. difficulty of the questions).
-  
-
   <br/>  
 
 ----
