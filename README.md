@@ -71,7 +71,7 @@ The site encompasses the html index page and the terminal screen. I wanted to ha
 - The player can choose his name or nickname.
 - The player can see the first question and options.
 - The player can see if his chocie was good or wrong.
-- Validation allows the Player multiple attempts of getting inputs right.
+- Validation allows the player multiple attempts of getting inputs right.
 - Player is allowed to see the coorect answers if wanted.
 - Player is allowed to see the leaderboard. 
 - Player is allowed to try again.
@@ -92,7 +92,6 @@ The site encompasses the html index page and the terminal screen. I wanted to ha
 -   [GitHub:](https://github.com/) is the respository for all the git pushes.
 -   [Gitpod](https://gitpod.io/) was the IDE Editor
 -   [Heroku:](https://heroku.com) used to deploy the application.
--   [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)
   
 ----
 ## Testing
@@ -100,6 +99,8 @@ I tested my project on PEP8 as suggested in the course and by my mentor, I was r
 ![](views/pep8.PNG)
 ![](views/pep82.PNG)
 ![](views/pep83.PNG)
+After fixing the errors:
+![](views/)
 I have also tested my project using Lighthouse and the result was a good one:
 ![](views/l.PNG)
 
