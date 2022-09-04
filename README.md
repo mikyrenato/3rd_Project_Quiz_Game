@@ -95,12 +95,12 @@ The site encompasses the html index page and the terminal screen. I wanted to ha
   
 ----
 ## Testing
-I tested my project on PEP8 as suggested in the course and by my mentor, I was really surprised to see the amount of errors I was getting, luckily I was able to fix them all:
+I tested my project on PEP8 as suggested in the course and by my mentor, I was really surprised to see the amount of errors I was getting, luckily I was able to fix most of them:
 ![](views/pep8.PNG)
 ![](views/pep82.PNG)
 ![](views/pep83.PNG)
-After fixing the errors:
-![](views/)
+After fixing the errors I only got one left, which is not affecting the functionality of the project:
+![](views/pep8r.PNG)
 I have also tested my project using Lighthouse and the result was a good one:
 ![](views/l.PNG)
 
