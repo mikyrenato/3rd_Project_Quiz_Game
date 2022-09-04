@@ -21,6 +21,9 @@ SHEET = GSPREAD_CLIENT.open('quiz_game')
 
 
 print("Do you know much about football? Can you make it on the leaderboard?")
+print("The quiz has 20 questions about Premier league and World Cup")
+print("Each question will give you 5 points out of 100.")
+print("If you still feel confident, please follow the steps below:")
 nickname = ""
 nickname = input("Please enter your nickname: \n")
 print("Hello "+str(nickname)+", below is the first question, good luck!")
@@ -146,7 +149,7 @@ def leaderboard():
 
     data.sort(key=size, reverse=True)
 
-    print(tabulate(data[0:11], headers=['Leaderboard', 'Table']))
+    print(tabulate(data[0:11], headers=['Leaderboard', 'Score']))
 
 
 # -------------------------
