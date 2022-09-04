@@ -9,7 +9,7 @@
 ## Introduction <a name="introduction"></a>  
 
 
-My third project is a football quiz. A large part of the inspiration for this project comes from my love for football and I be;ieve all football fans will enjoy it as much as I do, by testing their knowledge about the football world.
+My third project is a football quiz. A large part of the inspiration for this project comes from my love for football and I believe all football fans will enjoy it as much as I do, by testing their knowledge about the football world.
 
 <br/>
 
@@ -70,9 +70,9 @@ The site encompasses the html index page and the terminal screen. I wanted to ha
 
 - The player can choose his name or nickname.
 - The player can see the first question and options.
-- The player can see if his chocie was good or wrong.
+- The player can see if his choice was good or wrong.
 - Validation allows the player multiple attempts of getting inputs right.
-- Player is allowed to see the coorect answers if wanted.
+- Player is allowed to see the correct answers if wanted.
 - Player is allowed to see the leaderboard. 
 - Player is allowed to try again.
    
