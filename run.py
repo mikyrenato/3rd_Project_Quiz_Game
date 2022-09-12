@@ -1,7 +1,3 @@
-# pip3 install gspread google-auth
-# pip3 freeze > requirements.txt
-# pip3 install tabulate
-
 import gspread
 from google.oauth2.service_account import Credentials
 from tabulate import tabulate
@@ -27,9 +23,6 @@ print("If you still feel confident, please follow the steps below:")
 nickname = ""
 nickname = input("Please enter your nickname: \n")
 print("Hello "+str(nickname)+", below is the first question, good luck!")
-
-
-# -------------------------
 
 # This is the main function which will run the quiz
 def start_quiz():
@@ -78,9 +71,6 @@ def start_quiz():
         leaderboard()
         return False
 
-
-# -------------------------
-
 # This function is telling the user if the answer was correct/incorrect
 def check_result(result, selection):
 
@@ -90,9 +80,6 @@ def check_result(result, selection):
     else:
         print("YOU ARE WRONG!")
         return 0
-
-
-# -------------------------
 
 # This fucntion will show the correct results and the choices
 def show_score(correct_selections, selections):
@@ -110,9 +97,6 @@ def show_score(correct_selections, selections):
         print(i, end=" ")
     print()
 
-
-# -------------------------
-
 # This fucntion is asking the user if he wants to try again or end the game
 def restart_game():
 
@@ -124,9 +108,6 @@ def restart_game():
     else:
         return False
 
-
-# -------------------------
-
 # This fucntion is updating the leaderboard worksheet
 def update_worksheet(data, worksheet):
 
@@ -134,9 +115,6 @@ def update_worksheet(data, worksheet):
     worksheet_to_update = SHEET.worksheet(worksheet)
     worksheet_to_update.append_row(data)
     print(f"{worksheet} worksheet updated successfully\n")
-
-
-# -------------------------
 
 # Sorting from highest to lowest the top 10 results from the worksheet
 def leaderboard():
@@ -150,9 +128,6 @@ def leaderboard():
     data.sort(key=size, reverse=True)
 
     print(tabulate(data[0:11], headers=['Leaderboard', 'Score']))
-
-
-# -------------------------
 
 # These are the quiz questions and answers
 questions = {
