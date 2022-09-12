@@ -91,6 +91,7 @@ The site encompasses the html index page and the terminal screen. I wanted to ha
 -   [Git:](https://git-scm.com/) used for version control, updated changes and commited changes and this in turn updated in Heroku 
 -   [GitHub:](https://github.com/) is the respository for all the git pushes.
 -   [Gitpod](https://gitpod.io/) was the IDE Editor
+-   Tabulate library: tabulate is a module that allows you to display table data beautifully
 -   [Heroku:](https://heroku.com) used to deploy the application.
   
 ----
