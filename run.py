@@ -99,14 +99,15 @@ def show_score(correct_selections, selections):
 
 # This fucntion is asking the user if he wants to try again or end the game
 def restart_game():
-
-    response = input("Would you like to try again? (yes or no): \n")
-    response = response.upper()
-
-    if response == "YES":
-        return True
-    else:
-        return False
+    while True:
+        response = input("Would you like to try again? (yes or no): \n")
+        response = response.upper()
+        if response not in ('YES', 'NO'):
+            print("Invalid choice, the only options are YES or NO")
+        elif response == "YES":
+            return True
+        else:
+            break
 
 # This fucntion is updating the leaderboard worksheet
 def update_worksheet(data, worksheet):
