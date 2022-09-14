@@ -50,26 +50,29 @@ def start_quiz():
         correct_selections += check_result(questions.get(key), selection)
         question_num += 1
     # the user is being asked if he want to see the correct answers
-    resp = input("Would you like to reveal the answers together"
-                 "with your result % ? (yes or no): \n")
-    resp = resp.upper()
-
-    if resp == "YES":
-        score = int((correct_selections/len(questions))*100)
-        print(str(nickname)+", you achieved: "+str(score)+"%")
-        show_score(correct_selections, selections)
-        data = nickname, score
-        quiz_data = [num for num in data]
-        update_worksheet(quiz_data, "Leaderboard")
-        leaderboard()
-    else:
-        score = int((correct_selections/len(questions))*100)
-        print(str(nickname)+", you achieved: "+str(score)+"%")
-        data = nickname, score
-        quiz_data = [num for num in data]
-        update_worksheet(quiz_data, "Leaderboard")
-        leaderboard()
-        return False
+    while True:
+        resp = input("Would you like to reveal the answers together"
+                     "with your result % ? (yes or no): \n")
+        resp = resp.upper()
+        if resp not in ('YES', 'NO'):
+            print("Invalid choice, the only options are YES or NO")
+        elif resp == "YES":
+            score = int((correct_selections/len(questions))*100)
+            print(str(nickname)+", you achieved: "+str(score)+"%")
+            show_score(correct_selections, selections)
+            data = nickname, score
+            quiz_data = [num for num in data]
+            update_worksheet(quiz_data, "Leaderboard")
+            leaderboard()
+        else:
+            score = int((correct_selections/len(questions))*100)
+            print(str(nickname)+", you achieved: "+str(score)+"%")
+            data = nickname, score
+            quiz_data = [num for num in data]
+            update_worksheet(quiz_data, "Leaderboard")
+            leaderboard()
+            return False
+        break
 
 # This function is telling the user if the answer was correct/incorrect
 def check_result(result, selection):
