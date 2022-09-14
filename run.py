@@ -72,7 +72,7 @@ def start_quiz():
             update_worksheet(quiz_data, "Leaderboard")
             leaderboard()
             return False
-        break
+            break
 
 # This function is telling the user if the answer was correct/incorrect
 def check_result(result, selection):
