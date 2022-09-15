@@ -57,7 +57,7 @@ def start_quiz():
         question_num += 1
     # the user is being asked if he want to see the correct answers
     while True:
-        resp = input("Would you like to reveal the answers together"
+        resp = input("Would you like to reveal the answers together "
                      "with your result % ? (yes or no): \n")
         resp = resp.upper()
         if resp not in ('YES', 'NO'):
@@ -70,6 +70,7 @@ def start_quiz():
             quiz_data = [num for num in data]
             update_worksheet(quiz_data, "Leaderboard")
             leaderboard()
+            return False
         elif resp == "NO":
             score = int((correct_selections/len(questions))*100)
             print(str(nickname)+", you achieved: "+str(score)+"%")
