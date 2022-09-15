@@ -142,10 +142,10 @@ def leaderboard():
     lead = SHEET.worksheet('Leaderboard')
 
     data = lead.get_all_values()
-    
+
     def size(dat): float(dat[1])
 
-    #size = lambda dat: float(dat[1])
+    # size = lambda dat: float(dat[1])
 
     data.sort(key=size, reverse=True)
 
