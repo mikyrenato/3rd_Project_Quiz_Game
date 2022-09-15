@@ -100,8 +100,10 @@ I tested my project on PEP8 as suggested in the course and by my mentor, I was r
 ![](views/pep8.PNG)
 ![](views/pep82.PNG)
 ![](views/pep83.PNG)
-After fixing the errors I only got one left, which is not affecting the functionality of the project:
+The most challenging one was fixing the error regarding the lambda:
 ![](views/pep8r.PNG)
+Luckily, with the help of [Stack Overflow](https://codeinstitute.net/ie/) I managed to fix it:
+![](views/pep8f.PNG)
 I have also tested my project using Lighthouse and the result was a good one:
 ![](views/l.PNG)
 
