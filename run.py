@@ -17,14 +17,20 @@ SHEET = GSPREAD_CLIENT.open('quiz_game')
 
 
 print("Do you know much about football? Can you make it on the leaderboard?")
+print("-------------------------")
 print("The quiz has 20 questions about Premier league and World Cup")
+print("-------------------------")
 print("Each question will give you 5 points out of 100.")
+print("-------------------------")
 print("If you still feel confident, please follow the steps below:")
+print("-------------------------")
 nickname = ""
 nickname = input("Please enter your nickname: \n")
 print("Hello "+str(nickname)+", below is the first question, good luck!")
 
 # This is the main function which will run the quiz
+
+
 def start_quiz():
 
     selections = []
@@ -75,6 +81,8 @@ def start_quiz():
             break
 
 # This function is telling the user if the answer was correct/incorrect
+
+
 def check_result(result, selection):
 
     if selection == result:
@@ -85,6 +93,8 @@ def check_result(result, selection):
         return 0
 
 # This fucntion will show the correct results and the choices
+
+
 def show_score(correct_selections, selections):
     print("-------------------------")
     print("RESULTS")
@@ -101,6 +111,8 @@ def show_score(correct_selections, selections):
     print()
 
 # This fucntion is asking the user if he wants to try again or end the game
+
+
 def restart_game():
     while True:
         response = input("Would you like to try again? (yes or no): \n")
@@ -113,6 +125,8 @@ def restart_game():
             break
 
 # This fucntion is updating the leaderboard worksheet
+
+
 def update_worksheet(data, worksheet):
 
     print(f"Updating {worksheet} worksheet...\n")
@@ -121,6 +135,8 @@ def update_worksheet(data, worksheet):
     print(f"{worksheet} worksheet updated successfully\n")
 
 # Sorting from highest to lowest the top 10 results from the worksheet
+
+
 def leaderboard():
 
     lead = SHEET.worksheet('Leaderboard')
@@ -134,6 +150,8 @@ def leaderboard():
     print(tabulate(data[0:11], headers=['Leaderboard', 'Score']))
 
 # These are the quiz questions and answers
+
+
 questions = {
  "1: Which player scored the fastest hat-trick in the Premier League?": "A",
  "2: Which player, with 653 games, has made the most"
@@ -169,6 +187,8 @@ questions = {
 }
 
 # These are the quiz options
+
+
 options = [["A. Sadio Mane", "B. Cristiano Ronaldo",
             "C. Michael Owen", "D. Didier Drogba"],
            ["A. Wayne Rooney", "B. Gareth Barry",
