@@ -102,7 +102,7 @@ I tested my project on PEP8 as suggested in the course and by my mentor, I was r
 ![](views/pep83.PNG)
 The most challenging one was fixing the error regarding the lambda:
 ![](views/pep8r.PNG)
-Luckily, with the help of [Stack Overflow](https://codeinstitute.net/ie/) I managed to fix it:
+Luckily, with the help of [Stack Overflow](https://stackoverflow.com/questions/25010167/e731-do-not-assign-a-lambda-expression-use-a-def) I managed to fix it:
 ![](views/pep8f.PNG)
 I have also tested my project using Lighthouse and the result was a good one:
 ![](views/l.PNG)
