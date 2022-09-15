@@ -70,7 +70,7 @@ def start_quiz():
             quiz_data = [num for num in data]
             update_worksheet(quiz_data, "Leaderboard")
             leaderboard()
-        else:
+        elif resp == "NO":
             score = int((correct_selections/len(questions))*100)
             print(str(nickname)+", you achieved: "+str(score)+"%")
             data = nickname, score
@@ -78,6 +78,7 @@ def start_quiz():
             update_worksheet(quiz_data, "Leaderboard")
             leaderboard()
             return False
+        else:
             break
 
 # This function is telling the user if the answer was correct/incorrect
