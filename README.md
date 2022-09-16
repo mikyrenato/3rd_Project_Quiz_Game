@@ -59,7 +59,7 @@ My third project is a football quiz. A large part of the inspiration for this pr
 
 ## Diagrame
 
-![](views/map.PNG)
+![](views/map.png)
 
 ----
 
