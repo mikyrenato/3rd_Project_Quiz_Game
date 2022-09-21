@@ -63,6 +63,24 @@ My third project is a football quiz. A large part of the inspiration for this pr
 
 ----
 
+## Features
+-User is being presented with the instructions:
+![](views/f1.PNG)
+-User needs to enter his nickname:
+![](views/f2.PNG)
+-User receives greeting message:
+![](views/f3.PNG)
+-The quiz starts and the user will be informed if his answer was wright or wrong:
+![](views/f4.PNG)
+-If the user's choice is not valid, the user will be asked to try again using the correct choice:
+![](views/f5.PNG)
+-User is being asked if she/he wants to know the correct answers together with the resuly and leaderboard, only yes or no will be accepted:
+![](views/f6.PNG)
+-User will be asked if he wants to try again, again, only yes or no will be accepted.
+![](views/f7.PNG)
+
+----
+
 ## Theme
 
 The site encompasses the html index page and the terminal screen. I wanted to have a background image that resonates with the theme of the game.
