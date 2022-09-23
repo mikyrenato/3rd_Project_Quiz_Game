@@ -150,7 +150,7 @@ def leaderboard():
 
     data.sort(key=size, reverse=True)
 
-    print(tabulate(data[0:11], headers=['Leaderboard', 'Score']))
+    print(tabulate(data[0:10], headers=['Leaderboard', 'Score']))
 
 # These are the quiz questions and answers
 
