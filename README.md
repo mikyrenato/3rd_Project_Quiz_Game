@@ -25,12 +25,12 @@ My third project is a football quiz. A large part of the inspiration for this pr
 
 <br/> 
 
-### The Business Goals of the Website: <a name="businessgoals"></a>
-- No commercial goals, but the site's goal is to to provide an interactive quiz.
+### The Business Goals of the Website:
+- No commercial goals, but the site's goal is to provide an interactive quiz.
   
   <br/> 
 
-### The Target Customer: <a name="targetcustomer"></a>
+### The Target Customer:
 
 - The audience of the site could encompass a number of age groups and there would generally not be any   limitation on who could not play.   
        
@@ -57,7 +57,7 @@ My third project is a football quiz. A large part of the inspiration for this pr
   <br/>  
 ----
 
-## Diagrame
+## Diagram
 
 ![](views/map.png)
 
@@ -74,7 +74,7 @@ My third project is a football quiz. A large part of the inspiration for this pr
 ![](views/f4.PNG)
 -If the user's choice is not valid, the user will be asked to try again using the correct choice:
 ![](views/f5.PNG)
--User is being asked if she/he wants to know the correct answers together with the resuly and leaderboard, only yes or no will be accepted:
+-User is being asked if she/he wants to know the correct answers together with the result and leaderboard, only yes or no will be accepted:
 ![](views/f6.PNG)
 -User will be asked if he wants to try again, again, only yes or no will be accepted.
 ![](views/f7.PNG)
@@ -111,15 +111,15 @@ The site encompasses the html index page and the terminal screen. I wanted to ha
 
 ### Technology Used:
 
--   [Git:](https://git-scm.com/) used for version control, updated changes and commited changes and this in turn updated in Heroku 
--   [GitHub:](https://github.com/) is the respository for all the git pushes.
+-   [Git:](https://git-scm.com/) used for version control, updated changes and committed changes and this in turn updated in Heroku 
+-   [GitHub:](https://github.com/) is the repository for all the git pushes.
 -   [Gitpod](https://gitpod.io/) was the IDE Editor
 -   Tabulate library: tabulate is a module that allows you to display table data beautifully
 -   [Heroku:](https://heroku.com) used to deploy the application.
   
 ----
 ## Testing
-I tested my project on PEP8 as suggested in the course and by my mentor, I was really surprised to see the amount of errors I was getting, luckily I was able to fix most of them:
+I tested my project on PEP8 as suggested in the course and by my mentor, I was really surprised to see the amount of errors I was getting, luckily, I was able to fix all of them:
 ![](views/pep8.PNG)
 ![](views/pep82.PNG)
 ![](views/pep83.PNG)
@@ -159,13 +159,13 @@ I have also tested my project using Lighthouse and the result was a good one:
 <br/>
 
 ### Deploying to Heroku
-- After registering on the Heroku site, you can see the dashboard. You can select 'New' and then click 'Create new app'. You need to pick a unique name for your app, it will let you know if it is  to available to use.
+- After registering on the Heroku site, you can see the dashboard. You can select 'New' and then click 'Create new app'. You need to pick a unique name for your app.
 - Select your region and create your app.
 - Go to the settings tab and scroll until you find the config vars section and pick 'Reveal config vars',
 in this case I added 'PORT' into the key field and added '8000' into the value field and click 'add'.
 - If you have credentials, for your project, you must create another config vars called 'CREDS' and 
 you would paste the JSON into the value field.
-- You have to to the builldpacks section and click 'add buildpack'.
+- You have to go the builldpacks section and click 'add buildpack'.
 - In this case I added 'Python' and 'saved changes, and did the same with 'Node'.
 - Next you go to the Deploy tab and you select 'github' and confirm connection to your GitHub Account.
 - You search for your project repository and click to 'connect'.
@@ -184,8 +184,8 @@ provided
  This helped me to print my leaderboard as [Tabular data](https://stackoverflow.com/questions/9535954/printing-lists-as-tabular-data)
 
  This helped me understand how to [Sort data as float](https://stackoverflow.com/questions/5967500/how-to-correctly-sort-a-string-with-a-number-inside) on my leaderboard data.
- I used [this repositorie](https://github.com/MHickey2/Where-Evil-Dwells) to inspire myself when creating the readme file.
- I used [this repositorie](https://github.com/AlexaH88/harry-potter-adventure-game/blob/main/views/index.html) to inspire myself on how to style the layout of the quiz.
+ I used [this repository](https://github.com/MHickey2/Where-Evil-Dwells) to inspire myself when creating the readme file.
+ I used [this repository](https://github.com/AlexaH88/harry-potter-adventure-game/blob/main/views/index.html) to inspire myself on how to style the layout of the quiz.
 
  I also used the following online resources:
 
