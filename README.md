@@ -74,7 +74,7 @@ My third project is a football quiz. A large part of the inspiration for this pr
 ![](views/f4.PNG)
 -If the user's choice is not valid, the user will be asked to try again using the correct choice:
 ![](views/f5.PNG)
--User is being asked if she/he wants to know the correct answers together with the result and leaderboard, only yes or no will be accepted:
+-User is being asked if she/he wants to know the correct answers together with the result and leaderboard(only top 10 results will appear on the leaderboard), only yes or no will be accepted:
 ![](views/f6.PNG)
 -User will be asked if he wants to try again, again, only yes or no will be accepted.
 ![](views/f7.PNG)
